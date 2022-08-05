@@ -197,3 +197,146 @@ To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
 
 Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
 $
+ *  Historial restaurado 
+
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   pages/categoria.html
+        modified:   pages/contacto.html
+        modified:   pages/indexdark.html
+        modified:   pages/producto.html
+        modified:   pages/resultado-busqueda.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        docs/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git add .
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit-m "Ajuste clic buscador"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit-m "ajuste clic buscador"
+git: 'commit-m' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit-tree
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Everything up-to-date
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit -m "ajuste clic botón buscador"
+[main cd8cb76] ajuste clic botón buscador
+ 6 files changed, 205 insertions(+), 6 deletions(-)
+ create mode 100644 docs/historial-git.txt
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (9/9), done.
+Writing objects: 100% (10/10), 2.26 KiB | 2.26 MiB/s, done.
+Total 10 (delta 6), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (6/6), completed with 6 local objects.
+To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
+   f5b2732..cd8cb76  main -> main
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   pages/resultado-busqueda.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git add .
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit -m "Ajuste boton buscador 2"
+[main 2c96273] Ajuste boton buscador 2
+ 2 files changed, 2 deletions(-)
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 437 bytes | 437.00 KiB/s, done.
+Total 5 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), completed with 4 local objects.
+To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
+   cd8cb76..2c96273  main -> main
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git branch mi-rama
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git branch
+* main
+  mi-rama
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git checkout -b "mi-rama"
+fatal: a branch named 'mi-rama' already exists
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git checkout mi-rama
+Switched to branch 'mi-rama'
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git status
+On branch mi-rama
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)        
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   css/main.css
+        modified:   docs/historial-git.txt
+        modified:   index.html
+        modified:   pages/categoria.html
+        modified:   pages/contacto.html
+        deleted:    pages/indexdark.html
+        modified:   pages/producto.html
+        modified:   pages/resultado-busqueda.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        img/bell-white.png
+        img/ham-close.png
+        img/ham-white.png
+        img/ham-white.svg
+        img/ham.png
+        img/user-white.png
+        pages/carrito.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$

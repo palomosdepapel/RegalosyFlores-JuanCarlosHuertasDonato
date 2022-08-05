@@ -74,6 +74,10 @@ ol li {
   padding-bottom: 15px;
 }
 
+.align-center {
+  text-align: center;
+}
+
 .derecha {
   text-align: right;
 }
@@ -86,6 +90,19 @@ ol li {
 
 .ocultar {
   display: none;
+}
+
+.contenedor-redondo {
+  background-color: #f5eaee;
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.contenedor-carrito {
+  background-color: #fff;
+  border-radius: 15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 /*ESTILOS PARTICULARES*/
@@ -257,6 +274,10 @@ header .menuMobile {
   background-color: #e4e4e4;
 }
 
+header .red {
+  background-color: transparent !important;
+}
+
 header .menuMobile .hamburger {
   border: none;
   cursor: pointer;
@@ -297,13 +318,12 @@ header .menuMobile .navbar {
   justify-content: space-evenly;
   align-items: center;
   transform: translateY(-100%);
-  transition: transform 0.2s ease;
+  transition: transform 0.5s ease;
 }
 
 header .menuMobile .navbar:target {
   transform: translateY(0);
 }
-
 
 header .menuMobile li a {
   display: block;
@@ -333,6 +353,14 @@ li a:focus {
 
 /*NAVEGACIÓN*/
 
+.gradient {
+  background-image: linear-gradient(
+    30deg,
+    rgba(245, 51, 62, 1),
+    rgba(251, 28, 117, 1)
+  ) !important;
+}
+
 .dark {
   background-color: #ec1f4a;
 }
@@ -361,8 +389,11 @@ nav ul li {
   transition-duration: 0.5s;
 }
 
-.dark nav ul li {
+.dark nav ul li,
+.gradient nav ul li {
   color: #f5eaee;
+}
+.gradient nav ul li ul li {
   background: #ec1f4a;
 }
 
@@ -371,7 +402,8 @@ nav ul li {
   background: #f5eaee;
 }
 
-.dark nav ul li a {
+.dark nav ul li a,
+.gradient nav ul li a {
   color: #f5eaee;
 }
 
@@ -380,7 +412,9 @@ nav ul li {
 }
 
 .dark nav ul li:hover,
-.dark nav ul li:focus-within {
+.dark nav ul li:focus-within,
+.gradient nav ul li:hover,
+.gradient nav ul li:focus-within {
   background: #dd103b;
   cursor: pointer;
 }
@@ -406,7 +440,8 @@ nav ul li ul {
   display: none;
 }
 
-.dark nav ul li ul {
+.dark nav ul li ul,
+.gradient nav ul li ul {
   background: #dd103b;
 }
 
@@ -561,6 +596,15 @@ main .flex-grillaProductos {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+
+main .flex-grillaCarrito {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
 }
 
 main .columna-flex {
@@ -741,6 +785,7 @@ main .favorite {
   top: 15px;
   padding: 5px;
   border-radius: 5px;
+  transition: background-color 2s ease-out 100ms;
 }
 
 main .favorite:hover {
@@ -753,6 +798,70 @@ main .data {
   padding: 0px 20px;
 }
 
+.button {
+  font-size: 18px;
+  padding: 10px 25px;
+  background-color: #dd103b;
+  color: #fff;
+  border-radius: 15px 0px 20px 0px;
+  border: 1px solid transparent;
+  margin: 0px;
+  display: inline-block;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
+}
+
+.button:hover {
+  background-color: #f9bd03;
+}
+
+.cat {
+  display: inline-block;
+  animation-duration: 2s;
+  animation-iteration-count: 2s;
+  transform-origin: bottom;
+}
+
+.bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+.grow:hover {
+  transform: scale(1.1);
+}
+
+.button-outline {
+  font-size: 15px;
+  padding: 10px 25px;
+  background-color: #fff;
+  color: #dd103b;
+  border-radius: 15px 0px 20px 0px;
+  border: 1px solid #dd103b;
+  margin: 10px;
+  display: inline-block;
+  transition: background-color 2s ease-out 100ms;
+}
+
+.button-outline:hover {
+  background-color: rgba(249, 189, 3, 0.4);
+}
+
 .addCart {
   font-size: 25px;
   position: absolute;
@@ -762,6 +871,9 @@ main .data {
   background-color: #dd103b;
   color: #fff;
   border-radius: 15px 0px 20px 0px;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  transform-origin: bottom;
 }
 
 .addCart:hover {
@@ -777,9 +889,115 @@ main .producto img.product {
   padding: 10px 30px;
 }
 
+/*TABLA CARRITO*/
+
+.tabla-carrito {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  text-align: center;
+}
+
+.tabla-carrito .div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  align-self: center;
+}
+.tabla-carrito .div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  align-self: center;
+}
+.tabla-carrito .div3 {
+  grid-area: 1 / 3 / 2 / 4;
+  align-self: center;
+}
+.tabla-carrito .div4 {
+  grid-area: 1 / 4 / 2 / 5;
+  align-self: center;
+}
+.tabla-carrito .div5 {
+  grid-area: 1 / 5 / 2 / 6;
+  align-self: center;
+}
+.tabla-carrito .div6 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+.tabla-carrito .div7 {
+  grid-area: 2 / 2 / 3 / 3;
+  align-self: center;
+}
+.tabla-carrito .div8 {
+  grid-area: 2 / 3 / 3 / 4;
+  align-self: center;
+}
+.tabla-carrito .div9 {
+  grid-area: 2 / 4 / 3 / 5;
+  align-self: center;
+}
+.tabla-carrito .div10 {
+  grid-area: 2 / 5 / 3 / 6;
+  align-self: center;
+}
+
+.tabla-carrito img {
+  width: 100px;
+}
+.carrito input[type="number"] {
+  text-align: center;
+}
+
+/*mobile tamaños de fuentes*/
+@media only screen and (max-width: 768px) {
+  .tabla-carrito {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    text-align: left;
+  }
+
+  .tabla-carrito .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+  }
+  .tabla-carrito .div2 {
+    grid-area: 3 / 1 / 4 / 2;
+  }
+  .tabla-carrito .div3 {
+    grid-area: 4 / 1 / 5 / 2;
+  }
+  .tabla-carrito .div4 {
+    grid-area: 5 / 1 / 6 / 2;
+  }
+  .tabla-carrito .div5 {
+    grid-area: 6 / 1 / 7 / 2;
+  }
+  .tabla-carrito .div6 {
+    grid-area: 2 / 1 / 3 / 3;
+    text-align: center !important;
+  }
+  .tabla-carrito .div7 {
+    grid-area: 3 / 2 / 4 / 3;
+  }
+  .tabla-carrito .div8 {
+    grid-area: 4 / 2 / 5 / 3;
+  }
+  .tabla-carrito .div9 {
+    grid-area: 5 / 2 / 6 / 3;
+  }
+  .tabla-carrito .div10 {
+    grid-area: 6 / 2 / 7 / 3;
+  }
+
+  .tabla-carrito img {
+    width: 50px;
+  }
+}
+
 /****************FOOTER******************/
 footer {
-  background-color: #dd103b;
   color: #fff;
   padding: 30px 0px;
   font-size: 13px;

@@ -15,24 +15,24 @@
     />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
-  <body>
+  <body class="gradient">
     <!--Contenido visible-->
     <!--HTML SEMÁNTICO-->
     <!--encabezado-->
     <header>
-      <div class="menuMobile only-mobile-block">
+      <div class="menuMobile red only-mobile-block">
         <div class="contenido header-flex">
           <div class="logo">
             <a href="../index.html"
-              ><img src="../img/logo-color.png" width="70" alt="Logo"
+              ><img src="../img/logo.png" width="70" alt="Logo"
             /></a>
           </div>
           <div class="contenido flex-right">
             <a class="only-mobile" href="#"
-              ><img src="../img/bell.png" width="16" alt="Alertas"
+              ><img src="../img/bell-white.png" width="16" alt="Alertas"
             /></a>
             <a class="only-mobile" href="#"
-              ><img src="../img/user.png" width="16" alt="Perfil"
+              ><img src="../img/user-white.png" width="16" alt="Perfil"
             /></a>
           </div>
           <!--Menú Mobile-->
@@ -50,30 +50,11 @@
             </a>
           </ul>
           <a class="hamburger" href="#navbar">
-            <img src="../img/ham.png" alt="menu" />
+            <img src="../img/ham-white.png" alt="menu" />
           </a>
         </div>
       </div>
-      <div class="menuSuperior">
-        <div class="contenido flex-var">
-          <form class="buscador" action="resultado-busqueda.html">
-            <input
-              class="text"
-              type="text"
-              name="buscador"
-              placeholder="Busca tu regalo..."
-            />
-            <input class="button zoom grow" type="submit" value="." />
-          </form>
-          <a class="only-desktop" href="#"
-            ><img src="../img/bell.png" width="16" alt="Alertas"
-          /></a>
-          <a class="only-desktop" href="#"
-            ><img src="../img/user.png" width="16" alt="Perfil"
-          /></a>
-        </div>
-      </div>
-      <div class="only-desktop-block menuPrincipal gradient">
+      <div class="only-desktop-block menuPrincipal">
         <div class="contenido header-flex">
           <div class="logo">
             <a href="../index.html"
@@ -120,108 +101,51 @@
     </header>
 
     <!--área principal-->
-    <main>
+    <main class="contenedor-redondo p-5">
       <div class="contenido">
-        <section class="producto">
-          <div class="columna-flex-50">
-            <div class="espacio10">
-              <img
-                class="product"
-                src="../img/DSC03049ESCOGIDOweb.jpg"
-                width="100%"
-                alt="Ancheta"
-              />
-            </div>
-          </div>
-          <div class="columna-flex-50">
-            <div class="espacio10">
-              <h1>Un momento muy especial</h1>
-              <p class="precio">$269,990</p>
-              <form class="buscador" action="carrito.html">
-                <input class="number" type="number" name="buscador" />
-                <input class="button cart grow" type="submit" value="." />
-              </form>
-            </div>
-          </div>
-          <div class="columna-flex-50">
-            <div class="espacio10">
-              <h3>Producto</h3>
-              <ul>
-                <li>Galletas Zukerino (water crakers)</li>
-                <li>Chocolates Guylian</li>
-                <li>Duraznos o melocotones en almíbar</li>
-                <li>Aceitunas</li>
-                <li>Tomates secos</li>
-                <li>Queso holandés</li>
-                <li>Pâté</li>
-                <li>Pícolo de vino tinto Santa Carolina</li>
-                <li>Pícolo de vino blanco</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section class="grillaProductos">
-          <h2>También le puede interesar</h2>
-          <div class="flex-grillaProductos">
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><img src="../img/favorite.png" alt=""
-              /></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/072.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Desayuno Aniversario</h3>
-              <div class="data">
-                <p class="precio">$153,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+        <section>
+          <h2>Carrito de compras</h2>
+          <div class="contenedor-carrito">
+            <form class="carrito" action="">
+              <div class="tabla-carrito">
+                <div class="div1"></div>
+                <div class="div2"><strong>Producto</strong></div>
+                <div class="div3"><strong>Precio</strong></div>
+                <div class="div4"><strong>Cantidad</strong></div>
+                <div class="div5"><strong>Subtotal</strong></div>
+                <div class="div6">
+                  <a href="producto.html">
+                    <img
+                      class="product"
+                      src="../img/DSC03049ESCOGIDOweb.jpg"
+                      width="50"
+                      alt="Rosas"
+                  /></a>
+                </div>
+                <div class="div7">Un momento muy especial</div>
+                <div class="div8">$269,990</div>
+                <div class="div9">
+                  <input class="number" type="number" value="3" />
+                </div>
+                <div class="div10">$809,970</div>
+              </div>
+            </form>
+            <div class="flex-grillaCarrito">
+              <div class="columna-flex-50">
+                <h4>Total: $809,970</h4>
+              </div>
+              <div class="columna-flex-50 align-center">
+                <a class="button-outline" href="categoria.html">Seguir comprando >></a>
+                <a class="button bounce" href="#">Checkout >></a>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><img src="../img/favorite.png" alt=""
-              /></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC03049ESCOGIDOweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Un momento muy especial</h3>
-              <div class="data">
-                <p class="precio">$269,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
-              </div>
-            </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><img src="../img/favorite.png" alt=""
-              /></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC03976escogidoweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Bouquet 12 rosas surtidas</h3>
-              <div class="data">
-                <p class="precio">$66,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
-              </div>
-            </div>
+            
           </div>
         </section>
       </div>
     </main>
-
     <!--pié de página-->
-    <footer class="gradient">
+    <footer>
       <div class="contenido">
         <div class="columna-flex-25">
           <img src="../img/logo.png" width="80" alt="Logo" />

@@ -1,0 +1,199 @@
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git init
+Reinitialized existing Git repository in C:/Users/Admin/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato/.git/
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status-s
+git: 'status-s' is not a git command. See 'git --help'.
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status -s
+ M README.md
+?? index.html
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit -m "Subida de un index en blanco"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git add .
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit -m "subo el readme"
+[main 2e49893] subo el readme
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+ create mode 100644 index.html
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+info: please complete authentication in your browser...
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 536 bytes | 536.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
+   46df67f..2e49893  main -> main
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .editorconfig
+        css/
+        favicon.ico
+        img/
+        pages/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git add .
+warning: in the working copy of 'img/ham-close.svg', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'img/ham.svg', LF will be replaced by CRLF the next time Git touches it
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .editorconfig
+        new file:   css/main.css
+        new file:   favicon.ico
+        new file:   img/022.jpg
+        new file:   img/072.jpg
+        new file:   img/DSC02738escogidaweb.jpg
+        new file:   img/DSC03049ESCOGIDOweb.jpg
+        new file:   img/DSC03659iwebger.jpg
+        new file:   img/DSC03709_sel.jpg
+        new file:   img/DSC03950escogidoweb.jpg
+        new file:   img/DSC03964escogidoweb.jpg
+        new file:   img/DSC03976escogidoweb.jpg
+        new file:   img/DSC04011escogidoweb.jpg
+        new file:   img/IMG_20210228_171257_web.jpg
+        new file:   img/bell.png
+        new file:   img/cart-color.png
+        new file:   img/cart.png
+        new file:   img/cat-anchetas.png
+        new file:   img/cat-cajas-sorpresa.png
+        new file:   img/cat-desayunos.png
+        new file:   img/cat-flores.png
+        new file:   img/contacto.jpg
+        new file:   img/contacto.png
+        new file:   img/facebook.png
+        new file:   img/favorite.png
+        new file:   img/flowers.png
+        new file:   img/ham-close.svg
+        new file:   img/ham.svg
+        new file:   img/instagram.png
+        new file:   img/logo-color.png
+        new file:   img/logo.png
+        new file:   img/rosas.jpg
+        new file:   img/user.png
+        new file:   img/zoom.png
+        modified:   index.html
+        new file:   pages/categoria.html
+        new file:   pages/contacto.html
+        new file:   pages/indexdark.html
+        new file:   pages/producto.html
+        new file:   pages/resultado-busqueda.html
+
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git commit -m "subo el sitio que llevo hasta el momento / incluye menú mobile"
+[main f5b2732] subo el sitio que llevo hasta el momento / incluye menú mobile
+ 40 files changed, 2608 insertions(+), 11 deletions(-)
+ create mode 100644 .editorconfig
+ create mode 100644 css/main.css
+ create mode 100644 favicon.ico
+ create mode 100644 img/022.jpg
+ create mode 100644 img/072.jpg
+ create mode 100644 img/DSC02738escogidaweb.jpg
+ create mode 100644 img/DSC03049ESCOGIDOweb.jpg
+ create mode 100644 img/DSC03659iwebger.jpg
+ create mode 100644 img/DSC03709_sel.jpg
+ create mode 100644 img/DSC03950escogidoweb.jpg
+ create mode 100644 img/DSC03964escogidoweb.jpg
+ create mode 100644 img/DSC03976escogidoweb.jpg
+ create mode 100644 img/DSC04011escogidoweb.jpg
+ create mode 100644 img/IMG_20210228_171257_web.jpg
+ create mode 100644 img/bell.png
+ create mode 100644 img/cart-color.png
+ create mode 100644 img/cart.png
+ create mode 100644 img/cat-anchetas.png
+ create mode 100644 img/cat-cajas-sorpresa.png
+ create mode 100644 img/cat-desayunos.png
+ create mode 100644 img/cat-flores.png
+ create mode 100644 img/contacto.jpg
+ create mode 100644 img/contacto.png
+ create mode 100644 img/facebook.png
+ create mode 100644 img/favorite.png
+ create mode 100644 img/flowers.png
+ create mode 100644 img/ham-close.svg
+ create mode 100644 img/ham.svg
+ create mode 100644 img/instagram.png
+ create mode 100644 img/logo-color.png
+ create mode 100644 img/logo.png
+ create mode 100644 img/rosas.jpg
+ create mode 100644 img/user.png
+ create mode 100644 img/zoom.png
+ create mode 100644 pages/categoria.html
+ create mode 100644 pages/contacto.html
+ create mode 100644 pages/indexdark.html
+ create mode 100644 pages/producto.html
+ create mode 100644 pages/resultado-busqueda.html
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Enumerating objects: 47, done.
+Counting objects: 100% (47/47), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (44/44), done.
+Writing objects: 100% (45/45), 3.40 MiB | 4.00 MiB/s, done.
+Total 45 (delta 5), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (5/5), done.
+To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
+   2e49893..f5b2732  main -> main
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$

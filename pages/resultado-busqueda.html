@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flores website</title>
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/main.css" />
+  </head>
+  <body>
+    <!--Contenido visible-->
+    <!--HTML SEMÁNTICO-->
+    <!--encabezado-->
+    <header>
+      <div class="menuMobile only-mobile-block">
+        <div class="contenido header-flex">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../img/logo-color.png" width="70" alt="Logo"
+            /></a>
+          </div>
+          <div class="contenido flex-right">
+            <a class="only-mobile" href="#"
+              ><img src="../img/bell.png" width="16" alt="Alertas"
+            /></a>
+            <a class="only-mobile" href="#"
+              ><img src="../img/user.png" width="16" alt="Perfil"
+            /></a>
+          </div>
+          <!--Menú Mobile-->
+          <ul class="navbar" id="navbar">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="categoria.html">Romance</a></li>
+            <li><a href="categoria.html">Ramilletes</a></li>
+            <li><a href="categoria.html">Desayunos</a></li>
+            <li><a href="categoria.html">Canastas de frutas</a></li>
+            <li><a href="categoria.html">Flores</a></li>
+            <li><a href="categoria.html">Novedades</a></li>
+            <li><a href="contacto.html">Contáctenos</a></li>
+            <a class="close" href="#">
+              <img src="../img/ham-close.svg" alt="close" />
+            </a>
+          </ul>
+          <a class="hamburger" href="#navbar">
+            <img src="../img/ham.svg" alt="menu" />
+          </a>
+        </div>
+      </div>
+      <div class="menuSuperior">
+        <div class="contenido flex-var">
+          <form
+            class="buscador only-desktop"
+            method="post"
+            action="resultado-busqueda.html"
+          >
+            <input
+              class="text"
+              type="text"
+              name="buscador"
+              placeholder="Busca tu regalo..."
+            />
+            <input class="button zoom" type="submit" value="." />
+          </form>
+          <a class="only-desktop" href="#"
+            ><img src="../img/bell.png" width="16" alt="Alertas"
+          /></a>
+          <a class="only-desktop" href="#"
+            ><img src="../img/user.png" width="16" alt="Perfil"
+          /></a>
+        </div>
+      </div>
+      <div class="only-desktop-block menuPrincipal dark">
+        <div class="contenido header-flex">
+          <div class="logo">
+            <a href="../index.html"
+              ><img src="../img/logo.png" width="100" alt="Logo"
+            /></a>
+          </div>
+          <!--Menú-->
+          <nav class="navegacion" role="navigation">
+            <ul>
+              <li><a href="../index.html">Inicio</a></li>
+              <li>
+                <a href="categoria.html" aria-haspopup="true"
+                  >Desayunos y anchetas</a
+                >
+                <ul class="dropdown" aria-label="submenu">
+                  <li><a href="categoria.html">Romance</a></li>
+                  <li><a href="categoria.html">Ramilletes</a></li>
+                  <li><a href="categoria.html">Desayunos</a></li>
+                  <li><a href="categoria.html">Canastas de frutas</a></li>
+                </ul>
+              </li>
+              <li><a href="categoria.html">Flores</a></li>
+              <li><a href="categoria.html">Novedades</a></li>
+              <li><a href="contacto.html">Contáctenos</a></li>
+            </ul>
+          </nav>
+          <nav class="extra" role="navigation">
+            <ul>
+              <li>
+                $0 - 0productos
+                <img
+                  src="../img/cart.png"
+                  width="16"
+                  alt="Carrito de compras"
+                />
+                <ul>
+                  <li>Carrito vacío</li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!--área principal-->
+    <main>
+      <div class="contenido">
+        <div class="flex-center">
+          <form class="buscador" method="post" action="resultado-busqueda.html">
+            <div class="buscador-centrado">
+              <div class="columna-flex-33-central">
+                <input
+                  class="text"
+                  type="text"
+                  name="buscador"
+                  placeholder="Busca tu regalo..."
+                />
+                <input class="button zoom" type="submit" value="." />
+                <br />
+                <br />
+                <select name="select1" id="">
+                  <option value="">Escoger</option>
+                  <option value="Opción 1">Opción 1</option>
+                  <option value="Opción 2">Opción 2</option>
+                  <option value="Opción 3">Opción 3</option>
+                </select>
+                <select name="select2" id="">
+                  <option value="">Escoger</option>
+                  <option value="Opción 1">Opción 1</option>
+                  <option value="Opción 2">Opción 2</option>
+                  <option value="Opción 3">Opción 3</option>
+                </select>
+                <select name="select3" id="">
+                  <option value="">Escoger</option>
+                  <option value="Opción 1">Opción 1</option>
+                  <option value="Opción 2">Opción 2</option>
+                  <option value="Opción 3">Opción 3</option>
+                </select>
+              </div>
+            </div>
+          </form>
+        </div>
+        <section class="grillaProductos">
+          <h2>Nombre de la Catagoría</h2>
+          <div class="flex-grillaProductos">
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/072.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Desayuno Aniversario</h3>
+              <div class="data">
+                <p class="precio">$153,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/DSC03049ESCOGIDOweb.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Un momento muy especial</h3>
+              <div class="data">
+                <p class="precio">$269,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/DSC03976escogidoweb.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Bouquet 12 rosas surtidas</h3>
+              <div class="data">
+                <p class="precio">$66,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/DSC02738escogidaweb.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Chocolates en ramillete</h3>
+              <div class="data">
+                <p class="precio">$64,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/DSC04011escogidoweb.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Un momento muy especial</h3>
+              <div class="data">
+                <p class="precio">$98,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+            <div class="columna-flex-33">
+              <a class="favorite" href="#"
+                ><img src="../img/favorite.png" alt=""
+              /></a>
+              <a href="producto.html"
+                ><img
+                  class="product"
+                  src="../img/DSC03659iwebger.jpg"
+                  width="100%"
+                  alt="Rosas"
+              /></a>
+              <h3>Cerveza alemana y chocolates (con y sin bombas)</h3>
+              <div class="data">
+                <p class="precio">$66,990 – $81,990</p>
+                <a class="addCart" href="carrito.html">+</a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!--pié de página-->
+    <footer>
+      <div class="contenido">
+        <div class="columna-flex-25">
+          <img src="../img/logo.png" width="80" alt="Logo" />
+        </div>
+        <div class="columna-flex-25">
+          <h6>Información</h6>
+          <ol>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Cómo comprar</a></li>
+          </ol>
+        </div>
+        <div class="columna-flex-25">
+          <h6>Horario de entrega</h6>
+          <p>Lorem ipsum</p>
+          <h6>Horario de atención</h6>
+          <p>Lorem ipsum</p>
+        </div>
+        <div class="columna-flex-25">
+          <h6>Contáctenos</h6>
+          <a href="contacto.html"
+            ><img
+              src="../img/contacto.png"
+              width="16"
+              alt="Contáctenos por correo"
+          /></a>
+          <a href="#"
+            ><img
+              src="../img/facebook.png"
+              width="16"
+              alt="Contáctenos por Facebook"
+          /></a>
+          <a href="#"
+            ><img
+              src="../img/instagram.png"
+              width="16"
+              alt="Contáctenos por Instagram"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

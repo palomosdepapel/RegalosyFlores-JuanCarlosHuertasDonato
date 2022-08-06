@@ -309,9 +309,7 @@ $ git checkout mi-rama
 Switched to branch 'mi-rama'
 
 Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
-$
-
-Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
 $ git status
 On branch mi-rama
 Changes not staged for commit:
@@ -339,4 +337,117 @@ Untracked files:
 no changes added to commit (use "git add" and/or "git commit -a")
 
 Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git add .
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git commit -m "Subo gradientes transiciones y animaciones"
+[mi-rama e9dc6a1] Subo gradientes transiciones y animaciones
+ 15 files changed, 612 insertions(+), 361 deletions(-)
+ create mode 100644 img/bell-white.png
+ create mode 100644 img/ham-close.png
+ create mode 100644 img/ham-white.png
+ create mode 100644 img/ham-white.svg
+ create mode 100644 img/ham.png
+ create mode 100644 img/user-white.png
+ create mode 100644 pages/carrito.html
+ delete mode 100644 pages/indexdark.html
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git push
+fatal: The current branch mi-rama has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin mi-rama
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git status
+On branch mi-rama
+nothing to commit, working tree clean
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git merge mi-rama
+Already up to date.
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Everything up-to-date
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch mi-rama
+nothing to commit, working tree clean
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git status
+On branch mi-rama
+nothing to commit, working tree clean
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git merge mi-rama
+Already up to date.
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (mi-rama)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git merge mi-rama
+Updating 2c96273..e9dc6a1
+Fast-forward
+ css/main.css                  | 232 +++++++++++++++++++++++++++++++-
+ docs/historial-git.txt        | 143 ++++++++++++++++++++
+ img/bell-white.png            | Bin 0 -> 10094 bytes
+ img/ham-close.png             | Bin 0 -> 202 bytes
+ img/ham-white.png             | Bin 0 -> 179 bytes
+ img/ham-white.svg             |   1 +
+ img/ham.png                   | Bin 0 -> 179 bytes
+ img/user-white.png            | Bin 0 -> 16318 bytes
+ index.html                    |  26 ++--
+ pages/carrito.html            | 190 ++++++++++++++++++++++++++
+ pages/categoria.html          |  28 ++--
+ pages/contacto.html           |  10 +-
+ pages/indexdark.html          | 301 ------------------------------------------
+ pages/producto.html           |  18 +--
+ pages/resultado-busqueda.html |  24 ++--
+ 15 files changed, 612 insertions(+), 361 deletions(-)
+ create mode 100644 img/bell-white.png
+ create mode 100644 img/ham-close.png
+ create mode 100644 img/ham-white.png
+ create mode 100644 img/ham-white.svg
+ create mode 100644 img/ham.png
+ create mode 100644 img/user-white.png
+ create mode 100644 pages/carrito.html
+ delete mode 100644 pages/indexdark.html
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
+$ git push
+Enumerating objects: 32, done.
+Counting objects: 100% (32/32), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (20/20), 28.61 KiB | 9.54 MiB/s, done.
+Total 20 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 8 local objects.
+To https://github.com/palomosdepapel/RegalosyFlores-JuanCarlosHuertasDonato.git
+   2c96273..e9dc6a1  main -> main
+
+Admin@DESKTOP-0PAIL9F MINGW64 ~/Documents/curso - desarrollo web/Proyecto/RegalosyFlores-JuanCarlosHuertasDonato (main)
 $

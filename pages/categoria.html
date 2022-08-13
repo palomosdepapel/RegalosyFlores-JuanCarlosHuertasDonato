@@ -13,6 +13,16 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
   <body>
@@ -20,41 +30,7 @@
     <!--HTML SEMÁNTICO-->
     <!--encabezado-->
     <header>
-      <div class="menuMobile only-mobile-block">
-        <div class="contenido header-flex">
-          <div class="logo">
-            <a href="../index.html"
-              ><img src="../img/logo-color.png" width="70" alt="Logo"
-            /></a>
-          </div>
-          <div class="contenido flex-right">
-            <a class="only-mobile" href="#"
-              ><img src="../img/bell.png" width="16" alt="Alertas"
-            /></a>
-            <a class="only-mobile" href="#"
-              ><img src="../img/user.png" width="16" alt="Perfil"
-            /></a>
-          </div>
-          <!--Menú Mobile-->
-          <ul class="navbar" id="navbar">
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="categoria.html">Romance</a></li>
-            <li><a href="categoria.html">Ramilletes</a></li>
-            <li><a href="categoria.html">Desayunos</a></li>
-            <li><a href="categoria.html">Canastas de frutas</a></li>
-            <li><a href="categoria.html">Flores</a></li>
-            <li><a href="categoria.html">Novedades</a></li>
-            <li><a href="contacto.html">Contáctenos</a></li>
-            <a class="close" href="#">
-              <img src="../img/ham-close.png" alt="close" />
-            </a>
-          </ul>
-          <a class="hamburger" href="#navbar">
-            <img src="../img/ham.png" alt="menu" />
-          </a>
-        </div>
-      </div>
-      <div class="menuSuperior">
+      <div class="menuSuperior only-desktop-block">
         <div class="contenido flex-var">
           <form class="buscador" action="resultado-busqueda.html">
             <input
@@ -65,58 +41,99 @@
             />
             <input class="button zoom grow" type="submit" value="." />
           </form>
-          <a class="only-desktop" href="#"
-            ><img src="../img/bell.png" width="16" alt="Alertas"
-          /></a>
-          <a class="only-desktop" href="#"
-            ><img src="../img/user.png" width="16" alt="Perfil"
-          /></a>
+          <a class="only-desktop" href="#"><i class="bi bi-bell"></i></a>
+          <a class="only-desktop" href="#"><img class="rounded-circle" src="https://s.gravatar.com/avatar/3ec969aefcf0d305afdd6166094eac89?s=30" alt=""></a>
         </div>
       </div>
-      <div class="only-desktop-block menuPrincipal gradient">
-        <div class="contenido header-flex">
-          <div class="logo">
-            <a href="../index.html"
-              ><img src="../img/logo.png" width="100" alt="Logo"
-            /></a>
-          </div>
-          <!--Menú-->
-          <nav class="navegacion" role="navigation">
-            <ul>
-              <li><a href="../index.html">Inicio</a></li>
-              <li>
-                <a href="categoria.html" aria-haspopup="true"
-                  >Desayunos y anchetas</a
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-lg align-items-center">
+          <a class="navbar-brand" href="../index.html">
+            <!-- La imagen del logo se carga con CSS y cambia según la resolución de pantalla <img src="img/logo.png" width="100" alt="Logo"/> -->
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="d-flex only-mobile-flex mt-5" role="search">
+              <input class="form-control me-2" type="search" placeholder="Busca tu regalo" aria-label="Search">
+              <button class="button zoom grow " type="submit"><i class="bi bi-search"></i></button>
+            </form>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"
+                  >Inicio</a
                 >
-                <ul class="dropdown" aria-label="submenu">
-                  <li><a href="categoria.html">Romance</a></li>
-                  <li><a href="categoria.html">Ramilletes</a></li>
-                  <li><a href="categoria.html">Desayunos</a></li>
-                  <li><a href="categoria.html">Canastas de frutas</a></li>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Desayunos y anchetas
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="categoria.html"
+                      >Romance</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="categoria.html"
+                      >Ramilletes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="categoria.html"
+                      >Desayunos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="categoria.html"
+                      >Canastas de frutas</a
+                    >
+                  </li>
                 </ul>
               </li>
-              <li><a href="categoria.html">Flores</a></li>
-              <li><a href="categoria.html">Novedades</a></li>
-              <li><a href="contacto.html">Contáctenos</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoria.html">Flores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoria.html">Novedades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="categoria.html">Contáctenos</a>
+              </li>
             </ul>
-          </nav>
-          <nav class="extra" role="navigation">
-            <ul>
-              <li>
-                $0 - 0productos
-                <img
-                  src="../img/cart.png"
-                  width="16"
-                  alt="Carrito de compras"
-                />
-                <ul>
-                  <li>Carrito vacío</li>
+            <ul class="navbar-nav mb-2 mb-lg-0 only-desktop">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  $0 - 0productos <i class="bi bi-cart2"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Carrito vacío</a></li>
                 </ul>
               </li>
             </ul>
-          </nav>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
 
     <!--área principal-->
@@ -303,46 +320,62 @@
     </main>
 
     <!--pié de página-->
-    <footer class="gradient">
-      <div class="contenido">
-        <div class="columna-flex-25">
-          <img src="../img/logo.png" width="80" alt="Logo" />
-        </div>
-        <div class="columna-flex-25">
-          <h6>Información</h6>
-          <ol>
-            <li><a href="#">Términos y condiciones</a></li>
-            <li><a href="#">Cómo comprar</a></li>
-          </ol>
-        </div>
-        <div class="columna-flex-25">
-          <h6>Horario de entrega</h6>
-          <p>Lorem ipsum</p>
-          <h6>Horario de atención</h6>
-          <p>Lorem ipsum</p>
-        </div>
-        <div class="columna-flex-25">
-          <h6>Contáctenos</h6>
-          <a href="contacto.html"
-            ><img
-              src="../img/contacto.png"
-              width="16"
-              alt="Contáctenos por correo"
-          /></a>
-          <a href="#"
-            ><img
-              src="../img/facebook.png"
-              width="16"
-              alt="Contáctenos por Facebook"
-          /></a>
-          <a href="#"
-            ><img
-              src="../img/instagram.png"
-              width="16"
-              alt="Contáctenos por Instagram"
-          /></a>
+    <footer class="p-5 bg-dark">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-sm-3 p-3">
+            <a class="footer-brand" href="../index.html"
+              ><img src="../img/logo.png" width="80" alt="Logo"
+            /></a>
+          </div>
+          <div class="col-sm-3 p-3">
+            <h6>Información</h6>
+            <ol>
+              <li><a href="#">Términos y condiciones</a></li>
+              <li><a href="#">Cómo comprar</a></li>
+            </ol>
+          </div>
+          <div class="col-sm-3 p-3">
+            <h6>Horario de entrega</h6>
+            <p>Lorem ipsum</p>
+            <h6>Horario de atención</h6>
+            <p>Lorem ipsum</p>
+          </div>
+          <div class="col-sm-3 p-3">
+            <div class="icons-navbar-light">
+              <a href="contacto.html"><i class="bi bi-envelope"></i></a>
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+      //Este script modifica las clases del header > nav de acuerdo a la resolución de pantalla:
+      jQuery(document).ready(function ($) {
+        var alterClass = function () {
+          var ww = document.body.clientWidth;
+          if (ww < 981) {
+            $("nav").removeClass("navbar-dark bg-dark");
+            $("nav").addClass("navbar-light bg-light");
+          } else if (ww >= 982) {
+            $("nav").removeClass("navbar-light bg-light");
+            $("nav").addClass("navbar-dark bg-dark");            
+          }
+        };
+        $(window).resize(function () {
+          alterClass();
+        });
+        alterClass();
+      });
+    </script>
   </body>
 </html>

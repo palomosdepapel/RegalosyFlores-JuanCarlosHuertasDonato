@@ -119,7 +119,7 @@ footer ol li {
   padding: 5px 50px 5px 10px;
   border-radius: 15px;
   border: 1px solid #fff;
-  height: 32px;
+  height: 33px;
 }
 
 .buscador input.text:focus {
@@ -348,7 +348,7 @@ nav {
 }
 
 .navbar-brand {
-  content: url("/img/logo.png");
+  content: url("../img/logo.png");
   width: 80px;
 }
 
@@ -360,12 +360,12 @@ header .extra {
 /*mobile categorías*/
 @media only screen and (max-width: 998px) {
   .navbar-brand {
-    content: url("/img/logo-color.png");
+    content: url("../img/logo-color.png");
     width: 70px;
   }
 
   body.bg-dark .navbar-brand {
-    content: url("/img/logo.png");
+    content: url("../img/logo.png");
     width: 70px;
   }
 
@@ -463,7 +463,7 @@ main p.destacado {
 
 main p.precio {
   font-size: 17px;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -684,7 +684,9 @@ main .gridProductos .pro09 {
   }
 }
 
-main .favorite {
+main .favorite:link, main .favorite:visited {
+  color: #4a4e4e;
+  font-size: 20px;
   position: absolute;
   z-index: 5;
   right: 15px;
@@ -694,7 +696,7 @@ main .favorite {
   transition: background-color 2s ease-out 100ms;
 }
 
-main .favorite:hover {
+main .favorite:hover, main .favorite:focus {
   background-color: #eee;
 }
 

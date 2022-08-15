@@ -42,7 +42,12 @@
             <input class="button zoom grow" type="submit" value="." />
           </form>
           <a class="only-desktop" href="#"><i class="bi bi-bell"></i></a>
-          <a class="only-desktop" href="#"><img class="rounded-circle" src="https://s.gravatar.com/avatar/3ec969aefcf0d305afdd6166094eac89?s=30" alt=""></a>
+          <a class="only-desktop" href="#"
+            ><img
+              class="rounded-circle"
+              src="https://s.gravatar.com/avatar/3ec969aefcf0d305afdd6166094eac89?s=30"
+              alt=""
+          /></a>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg">
@@ -63,12 +68,22 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <form class="d-flex only-mobile-flex mt-5" role="search">
-              <input class="form-control me-2" type="search" placeholder="Busca tu regalo" aria-label="Search">
-              <button class="button zoom grow " type="submit"><i class="bi bi-search"></i></button>
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Busca tu regalo"
+                aria-label="Search"
+              />
+              <button class="button zoom grow" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
             </form>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../index.html"
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="../index.html"
                   >Inicio</a
                 >
               </li>
@@ -84,9 +99,7 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="categoria.html"
-                      >Romance</a
-                    >
+                    <a class="dropdown-item" href="categoria.html">Romance</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="categoria.html"
@@ -94,9 +107,7 @@
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="categoria.html"
-                      >Desayunos</a
-                    >
+                    <a class="dropdown-item" href="categoria.html">Desayunos</a>
                   </li>
                   <li>
                     <a class="dropdown-item" href="categoria.html"
@@ -138,144 +149,139 @@
 
     <!--área principal-->
     <main>
-      <div class="contenido">
-        <div class="flex-center">
-          <form class="buscador" action="resultado-busqueda.html">
-            <div class="buscador-centrado">
-              <div class="columna-flex-33-central">
-                <input
-                  class="text"
-                  type="text"
-                  name="buscador"
-                  placeholder="Busca tu regalo..."
-                />
-                <input class="button zoom grow" type="submit" value="." />
-                <br />
-                <br />
-                <select name="select1" id="">
-                  <option value="">Escoger</option>
-                  <option value="Opción 1">Opción 1</option>
-                  <option value="Opción 2">Opción 2</option>
-                  <option value="Opción 3">Opción 3</option>
-                </select>
-                <select name="select2" id="">
-                  <option value="">Escoger</option>
-                  <option value="Opción 1">Opción 1</option>
-                  <option value="Opción 2">Opción 2</option>
-                  <option value="Opción 3">Opción 3</option>
-                </select>
-                <select name="select3" id="">
-                  <option value="">Escoger</option>
-                  <option value="Opción 1">Opción 1</option>
-                  <option value="Opción 2">Opción 2</option>
-                  <option value="Opción 3">Opción 3</option>
-                </select>
-              </div>
+      <section class="grillaProductos">
+        <div class="container-xxl">
+          <div class="row align-items-center">
+            <div class="col-md-12 p-3">
+              <h2>Resultado de búsqueda</h2>
             </div>
-          </form>
+          </div>
         </div>
-        <section class="grillaProductos">
-          <h2>Nombre de la Catagoría</h2>
-          <div class="flex-grillaProductos">
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/072.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Desayuno Aniversario</h3>
-              <div class="data">
-                <p class="precio">$153,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+        <div class="container-xxl">
+          <div class="row align-items-center">
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/072.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Desayuno Aniversario</h3>
+                  <div class="data">
+                    <p class="precio">$153,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC03049ESCOGIDOweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Un momento muy especial</h3>
-              <div class="data">
-                <p class="precio">$269,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/DSC03049ESCOGIDOweb.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Un momento muy especial</h3>
+                  <div class="data">
+                    <p class="precio">$269,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC03976escogidoweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Bouquet 12 rosas surtidas</h3>
-              <div class="data">
-                <p class="precio">$66,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/DSC03976escogidoweb.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Bouquet 12 rosas surtidas</h3>
+                  <div class="data">
+                    <p class="precio">$66,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC02738escogidaweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Chocolates en ramillete</h3>
-              <div class="data">
-                <p class="precio">$64,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/DSC02738escogidaweb.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Chocolates en ramillete</h3>
+                  <div class="data">
+                    <p class="precio">$64,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC04011escogidoweb.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Un momento muy especial</h3>
-              <div class="data">
-                <p class="precio">$98,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/DSC04011escogidoweb.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Un momento muy especial</h3>
+                  <div class="data">
+                    <p class="precio">$98,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
-            <div class="columna-flex-33">
-              <a class="favorite" href="#"
-                ><i class="bi bi-bookmark"></i></a>
-              <a href="producto.html"
-                ><img
-                  class="product"
-                  src="../img/DSC03659iwebger.jpg"
-                  width="100%"
-                  alt="Rosas"
-              /></a>
-              <h3>Cerveza alemana y chocolates (con y sin bombas)</h3>
-              <div class="data">
-                <p class="precio">$66,990 – $81,990</p>
-                <a class="addCart grow" href="carrito.html">+</a>
+
+            <div class="col-md-4 p-3">
+              <div class="card">
+                <a class="favorite" href="#"><i class="bi bi-bookmark"></i></a>
+                <a href="producto.html">
+                  <img
+                    src="../img/DSC03659iwebger.jpg"
+                    class="card-img-top"
+                    alt="Producto"
+                  />
+                </a>
+                <div class="card-body">
+                  <h3>Cerveza alemana y chocolates (con y sin bombas)</h3>
+                  <div class="data">
+                    <p class="precio">$66,990 – $81,990</p>
+                  </div>
+                  <a class="addCart grow" href="carrito.html">+</a>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!--pié de página-->
@@ -316,7 +322,11 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <script>
       //Este script modifica las clases del header > nav de acuerdo a la resolución de pantalla:
       jQuery(document).ready(function ($) {
@@ -327,7 +337,7 @@
             $("nav").addClass("navbar-light bg-light");
           } else if (ww >= 982) {
             $("nav").removeClass("navbar-light bg-light");
-            $("nav").addClass("navbar-dark bg-dark");            
+            $("nav").addClass("navbar-dark bg-dark");
           }
         };
         $(window).resize(function () {

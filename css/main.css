@@ -222,7 +222,6 @@ footer ol li {
   display: inline-block !important;
 }
 
-
 .only-mobile-flex {
   display: none !important;
 }
@@ -236,7 +235,6 @@ footer ol li {
   .only-desktop {
     display: none !important;
   }
-
 
   .only-mobile-flex {
     display: flex !important;
@@ -274,12 +272,9 @@ header .navbar-brand {
   margin-left: 20px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   border: 1px solid transparent;
 }
-
-
-
 
 header .flex-var {
   display: flex;
@@ -287,8 +282,6 @@ header .flex-var {
   justify-content: flex-end;
   align-items: center;
 }
-
-
 
 header nav ul li {
   padding: 10px;
@@ -298,14 +291,11 @@ header nav ul li a {
   font-size: 16px !important;
 }
 
-
-
 /*ipad y mobile header*/
 @media only screen and (max-width: 1023px) {
   .navbar-brand img {
     width: 70px;
   }
-
 
   header .flex-var {
     justify-content: center;
@@ -341,7 +331,6 @@ nav {
   content: url("../img/logo.png");
   width: 80px;
 }
-
 
 /*mobile categorías*/
 @media only screen and (max-width: 998px) {
@@ -460,7 +449,6 @@ main .grillaProductos {
   padding: 50px 0px;
 }
 
-
 main .flex-grillaCarrito {
   display: flex;
   flex-direction: row;
@@ -508,8 +496,6 @@ main .card h3 {
 
 /*mobile*/
 @media only screen and (max-width: 768px) {
-
-
   main .columna-flex-33 {
     width: 96%;
   }
@@ -729,7 +715,6 @@ main .data {
 .grow:hover {
   transform: scale(1.1);
 }
-
 
 .addCart {
   font-size: 25px;

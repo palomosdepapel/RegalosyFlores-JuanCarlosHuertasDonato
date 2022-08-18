@@ -1,24 +1,9 @@
 //IMPORT una o varias hojas de estilo en orden (cascada)
 @import "reset";
-
-
-//VARIABLES
-// $nombre: valor;
-
-$azul: #0000ff;
-
-
-// ANIDAMIENTO
-ul{
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: $azul;
-  li{
-    display: block;
-    border-bottom: 5px solid $azul;
-    a{ 
-      text-decoration: dotted;
-      color: $azul;
-    }
-  }
-}
+@import "vars";
+@import "typography";
+@import "structure";
+@import "grid";
+@import "responsive";
+@import "animation";
 

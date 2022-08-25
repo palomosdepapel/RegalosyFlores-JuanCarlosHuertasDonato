@@ -6,8 +6,11 @@ body {
   background-color: $greylight;
 }
 
-header,main,footer {
-  display: block;
+//>>>>>>>>>>>>>>>>>>>>> EACH o listas <<<<<<<<<<<
+@each $lista in header, main, footer{
+  .#{$lista}{
+    display: block;
+  }
 }
 
 main ul li,main ol li,footer ul li,footer ol li {
@@ -28,18 +31,22 @@ main ul li,main ol li,footer ul li,footer ol li {
   display: none;
 }
 
-.contenedor-redondo {
-  background-color: $greylight;
+.contenedor-redondo, .contenedor-carrito {
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
-.contenedor-carrito {
-  background-color: $white;
-  border-radius: 15px;
-  padding-top: 25px;
-  padding-bottom: 25px;
+//>>>>>>>>>>>>>>>>>>>>> MAPS with each <<<<<<<<<<<
+$mapa:(
+  redondo: $greylight,
+  carrito: $white
+);
+
+@each $nombres, $colores in $mapa{
+  .contenedor-#{$nombres}{
+    background-color: $colores;
+  }
 }
 
 .buscador {
@@ -67,7 +74,9 @@ main ul li,main ol li,footer ul li,footer ol li {
     outline: 1px solid $greylight;
     border: 1px solid $greylight;
   }
-  .button {
+
+  //>>>>>>>>>>>>>>>>>>>>> EXTEND : comparte fragmenots idénticos <<<<<<<<<<<
+  .button{
     cursor: pointer;
     background-color: $quaternary;
     color: $quaternary;
@@ -80,14 +89,16 @@ main ul li,main ol li,footer ul li,footer ol li {
     right: 21px;
     margin-top: 1px;
   }
-  .button:hover {
-    background-color: $primary;
-  }
-  .button.zoom {
+  .button-zoom{
+    @extend .button;
     background-image: url(../img/zoom.png);
   }
-  .button.cart {
+  .button-cart{
+    @extend .button;
     background-image: url(../img/cart.png);
+  }
+  .button:hover {
+    background-color: $primary;
   }
 }
 
@@ -202,6 +213,7 @@ header {
   }
 }
 /****************gradients******************/
+
 .bg-dark {
   background-image: linear-gradient(
     30deg,
@@ -245,15 +257,15 @@ main {
     flex-wrap: wrap;
     align-items: center;
   }
-  .columna-flex-50 {
-    width: 50%;
+
+  //>>>>>>>>>>>>>>>>>>>>> BUCLES o for (para) <<<<<<<<<<<
+  @for $colflex from 3 through 7{
+    //fragmento que se repite
+    .columna-flex-#{$colflex}0{
+      width: (10% * $colflex);
+    }
   }
-  .columna-flex-30 {
-    width: 30%;
-  }
-  .columna-flex-70 {
-    width: 70%;
-  }
+
   h2 {
     color: $darkgrey;
   }
@@ -394,6 +406,19 @@ main {
     input[type="number"] {
       text-align: center;
     }
+  }
+
+   //>>>>>>>>>>>>>>>>>>>>> MIXINS Y OPERACIONES: reutilizar fragmentos que pueden ir cambiando <<<<<<<<<<<
+  @mixin iframebox ($ancho, $altura, $espaciado) {
+    width: $ancho;
+    height: $altura;
+    padding: $espaciado;
+  }
+  .cajamap{
+    @include iframebox (100%, 500px, 15px)
+  }
+  .cajavideo{
+    @include iframebox (100%, calc($ancho*2.75), 0px)
   }
 }
 

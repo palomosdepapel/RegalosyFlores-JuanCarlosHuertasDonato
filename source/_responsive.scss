@@ -79,7 +79,7 @@
   }
 
   body.bg-dark .navbar-brand {
-    content: url("../img/logo.png");
+    content: url("../img/logo.png")!important;
     width: 70px;
   }
 

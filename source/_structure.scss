@@ -149,6 +149,8 @@ $mapa:(
 
 .only-desktop {
   display: inline-block !important;
+  i{color: var($grey);}
+  i:hover{color: var($darkgrey);}
 }
 
 .only-mobile-flex {
@@ -356,7 +358,7 @@ main {
     padding: 10px 25px;
     background-color: $primary;
     color: $white;
-    border-radius: 15px 0px 20px 0px;
+    border-radius: 15px 0px 15px 0px;
     border: 1px solid transparent;
     margin: 0px;
     display: inline-block;

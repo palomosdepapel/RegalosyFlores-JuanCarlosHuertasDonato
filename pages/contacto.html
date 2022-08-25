@@ -28,7 +28,7 @@
           <input class="text" type="text" name="buscador" placeholder="Busca tu regalo..." />
           <input class="button-zoom grow" type="submit" value="." />
         </form>
-        <a class="only-desktop" href="#"><i class="bi bi-bell"></i></a>
+        <a class="only-desktop bell" href="#"><i class="bi bi-bell"></i></a>
         <a class="only-desktop" href="#"><img class="rounded-circle"
             src="https://s.gravatar.com/avatar/3ec969aefcf0d305afdd6166094eac89?s=30" alt=""></a>
       </div>
@@ -103,7 +103,11 @@
       <div class="container-xxl">
         <div class="row align-items-center">
           <div class="col-md-12 p-3">
-            <img src="../img/contacto.jpg" width="100%" alt="" />
+            <picture>
+              <source media="(max-width: 799px)" srcset="../img/contacto-480w.jpg">
+              <source media="(min-width: 800px)" srcset="../img/contacto-1288w.jpg">
+              <img src="../img/contacto-1288w.jpg" alt="Contáctenos" width="100%">
+            </picture>
           </div>
           <div class="col-md-12 p-3 text-center">
             <h2>Contáctenos</h2>

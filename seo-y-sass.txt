@@ -5,26 +5,37 @@ index.html
   <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
   <title>Bienvenidos a Dulce Motivo: Regalos, flores y desayunos sorpresa a domicilio en Bogotá - Dulce Motivo</title>
   <meta name="description" content="Dulce motivo para celebrar, compartir y sorprender a tu pareja, seres queridos o amigos.">
+  <h1>Día del amor y amistad</h1>
+
 carrito.html
   <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
   <title>Carrito de compras - Dulce Motivo</title>
   <meta name="description" content="Estas a un paso de sorprender a un amiga(o) o ser querido">
+  <h1>Carrito de compras</h1>
+
 categoria.html
   <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Aniversario, Bogotá">
-  <title>Categoría Novedades - Dulce Motivo</title>
+  <title>Categoría: Novedades - Dulce Motivo</title>
   <meta name="description" content="Dulce motivo para celebrar, compartir y sorprender a tu pareja, seres queridos o amigos.">
+  <h1>Categoría: Novedades</h1>
+
 contacto.html
   <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá, Chía, Cajicá">
   <title>Contáctanos y déjanos sorprenderte - Dulce Motivo</title>
   <meta name="description" content="Envíos a toda Bogotá y poblaciones cercanas">
+  <h1>Contáctenos</h1>
+
 producto.html
   <meta name="keywords" content="Regalos, Sorpresa, Anchetas, Chocolates, Queso, Vino, Bogotá">
   <title>Un momento muy especial - Dulce Motivo</title>
   <meta name="description" content="Galletas Zukerino,  Chocolates Guylian,  Duraznos o melocotones en almíbar,  Aceitunas,  Tomates secos,  Queso holandés,  Pâté,  Pícolo de vino tinto Santa Carolina, Pícolo de vino blanco">
+  <h1>Un momento muy especial</h1>
+
 resultado-de-búsqueda.html
   <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
   <title>Resultado de búsqueda - Dulce Motivo</title>
   <meta name="description" content="Encuentra el regalo perfecto y sorprende a tus seres queridos">
+  <h1>Resultado de búsqueda</h1>
 
 :::::::::::::::::::::::::::::::::::::::::::::
 Operadores, condicionales y bucles

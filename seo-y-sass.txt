@@ -1,0 +1,38 @@
+:::::::::::::::::::::::::::::::::::::::::::::
+Etiquetas y metaetiquetas
+:::::::::::::::::::::::::::::::::::::::::::::
+index.html
+  <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
+  <title>Bienvenidos a Dulce Motivo: Regalos, flores y desayunos sorpresa a domicilio en Bogotá - Dulce Motivo</title>
+  <meta name="description" content="Dulce motivo para celebrar, compartir y sorprender a tu pareja, seres queridos o amigos.">
+carrito.html
+  <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
+  <title>Carrito de compras - Dulce Motivo</title>
+  <meta name="description" content="Estas a un paso de sorprender a un amiga(o) o ser querido">
+categoria.html
+  <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Aniversario, Bogotá">
+  <title>Categoría Novedades - Dulce Motivo</title>
+  <meta name="description" content="Dulce motivo para celebrar, compartir y sorprender a tu pareja, seres queridos o amigos.">
+contacto.html
+  <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá, Chía, Cajicá">
+  <title>Contáctanos y déjanos sorprenderte - Dulce Motivo</title>
+  <meta name="description" content="Envíos a toda Bogotá y poblaciones cercanas">
+producto.html
+  <meta name="keywords" content="Regalos, Sorpresa, Anchetas, Chocolates, Queso, Vino, Bogotá">
+  <title>Un momento muy especial - Dulce Motivo</title>
+  <meta name="description" content="Galletas Zukerino,  Chocolates Guylian,  Duraznos o melocotones en almíbar,  Aceitunas,  Tomates secos,  Queso holandés,  Pâté,  Pícolo de vino tinto Santa Carolina, Pícolo de vino blanco">
+resultado-de-búsqueda.html
+  <meta name="keywords" content="Regalos, Flores, Desayunos, Sorpresa, Anchetas, Bogotá">
+  <title>Resultado de búsqueda - Dulce Motivo</title>
+  <meta name="description" content="Encuentra el regalo perfecto y sorprende a tus seres queridos">
+
+:::::::::::::::::::::::::::::::::::::::::::::
+Operadores, condicionales y bucles
+:::::::::::::::::::::::::::::::::::::::::::::
+se encuentran en _structure.scss
+EACH.................line 9
+MAPS.................line 40
+EXTEND...............line 78
+BUCLE................line 263
+MIXINS & *OPERATOR...line 413
+

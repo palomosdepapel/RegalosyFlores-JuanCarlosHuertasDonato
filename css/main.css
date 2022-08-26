@@ -11,6 +11,10 @@
   line-height: 1.5;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 /*typography*/
 h1 {
   font-size: 50px;
@@ -288,6 +292,11 @@ main .destacados, main .producto, main .contacto {
   margin-bottom: 20px;
 }
 main .destacados .primero {
+  background-color: #fcd1db;
+  padding: 50px 80px;
+  border-radius: 20px;
+}
+main .destacados .segundo {
   background-color: #fdddd1;
   padding: 50px 80px;
   border-radius: 20px;
@@ -688,6 +697,40 @@ main .tabla-carrito .div10 {
   transform: scale(1.1);
 }
 
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: darkgrey;
+}
+
+.swiper-pagination-bullet-active {
+  background: darkgrey;
+}
+
 /*RESPONSIVE*/
 /*ipad y mobile*/
 @media only screen and (max-width: 1023px) {
@@ -819,7 +862,7 @@ main .tabla-carrito .div10 {
     flex-direction: column-reverse;
   }
   main .destacados .primero {
-    padding: 20px 20px;
+    padding: 20px 20px 40px 20px;
   }
   main .gridProductos {
     display: grid;

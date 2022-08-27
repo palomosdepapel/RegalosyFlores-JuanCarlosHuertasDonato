@@ -108,6 +108,7 @@ $mapa:(
   background-color: $primary;
   color: $white;
   border: 1px solid $primary;
+  text-align: center;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: center;
@@ -117,11 +118,10 @@ $mapa:(
 
 .btn-outline-primary {
   border: 1px solid $primary;
+  text-align: center;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   color: $darkgrey;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .btn-check:active + .btn,.btn-check:checked + .btn,.btn.active,.btn.show,.btn:active {
@@ -205,6 +205,7 @@ header {
     ul {
       li {
         padding: 10px;
+        span{color:$white;}
       }
       li:last-child {
         border-bottom: 1px solid transparent;
@@ -213,6 +214,10 @@ header {
         font-size: 16px !important;
       }
     }
+  }
+  .badge.text-bg-secondary{
+    position: absolute;
+    right: -20px;
   }
 }
 /****************gradients******************/

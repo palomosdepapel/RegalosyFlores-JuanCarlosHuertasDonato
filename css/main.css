@@ -178,6 +178,7 @@ main ul li, main ol li, footer ul li, footer ol li {
   background-color: #ed2f55;
   color: #ffffff;
   border: 1px solid #ed2f55;
+  text-align: center;
   animation-duration: 2s;
   animation-iteration-count: infinite;
   transform-origin: center;
@@ -187,11 +188,10 @@ main ul li, main ol li, footer ul li, footer ol li {
 
 .btn-outline-primary {
   border: 1px solid #ed2f55;
+  text-align: center;
   border-top-left-radius: 20px;
   border-bottom-right-radius: 20px;
   color: #4a4e4e;
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .btn-check:active + .btn, .btn-check:checked + .btn, .btn.active, .btn.show, .btn:active {
@@ -273,11 +273,18 @@ header nav {
 header nav ul li {
   padding: 10px;
 }
+header nav ul li span {
+  color: #ffffff;
+}
 header nav ul li:last-child {
   border-bottom: 1px solid transparent;
 }
 header nav ul a {
   font-size: 16px !important;
+}
+header .badge.text-bg-secondary {
+  position: absolute;
+  right: -20px;
 }
 
 /****************gradients******************/
@@ -584,6 +591,10 @@ main .tabla-carrito .div9 {
 main .tabla-carrito .div10 {
   grid-area: 2/5/3/6;
   align-self: center;
+}
+main .tabla-carrito span.badge.text-bg-secondary {
+  position: absolute;
+  right: -10px;
 }
 
 /*ANIMATION*/

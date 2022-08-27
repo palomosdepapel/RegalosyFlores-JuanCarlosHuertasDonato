@@ -87,5 +87,9 @@ main {
       grid-area: 2 / 5 / 3 / 6;
       align-self: center;
     }
+    span.badge.text-bg-secondary{
+      position: absolute;
+      right: -10px;
+  }  
   }
 }

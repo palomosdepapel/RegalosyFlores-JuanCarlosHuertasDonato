@@ -31,7 +31,7 @@ main ul li,main ol li,footer ul li,footer ol li {
   display: none;
 }
 
-.contenedor-redondo, .contenedor-carrito {
+.contenedor-redondo, .contenedor-carrito, .contenedor-legales {
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -40,7 +40,8 @@ main ul li,main ol li,footer ul li,footer ol li {
 //>>>>>>>>>>>>>>>>>>>>> MAPS with each <<<<<<<<<<<
 $mapa:(
   redondo: $greylight,
-  carrito: $white
+  carrito: $white,
+  legales: $white,
 );
 
 @each $nombres, $colores in $mapa{

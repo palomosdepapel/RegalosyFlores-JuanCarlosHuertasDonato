@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/index.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/categoria.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/contacto.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/producto.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/carrito.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/checkout-01.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/terminos-y-condiciones.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/como-comprar.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/checkout-02.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/checkout-03.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://dulcemotivo.000webhostapp.com/pages/pedido-aprobado.html</loc>
+  <lastmod>2022-08-31T13:06:16+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>

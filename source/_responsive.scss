@@ -2,39 +2,16 @@
 
 /*ipad y mobile*/
 @media only screen and (max-width: 1023px) {
-  header {
-    .flex-var {
-      justify-content: center;
-    }
-    .dropdown-menu {
-      background: transparent;
-    }
-    nav {
-      ul {
-        li {
-          padding: 10px 0;
-          border-bottom: 1px solid #eee;
-        }
-      }
-    }
-  }
-
-  .only-desktop-block {
-    display: none !important;
-  }
-
-  .only-desktop {
-    display: none !important;
-  }
-
-  .only-mobile-flex {
-    display: flex !important;
-  }
+  
 
   .navbar-brand img {
     width: 70px;
   }
 
+  .only-mobile-flex {
+    display: flex;
+  }
+  
   main .gridProductos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +49,33 @@
 }
 
 /*mobile categorías*/
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 992px) {
+  header {
+    .flex-var {
+      justify-content: center;
+    }
+    .dropdown-menu {
+      background: transparent;
+    }
+    nav {
+      ul {
+        li {
+          padding: 10px 0;
+          border-bottom: 1px solid #eee;
+        }
+      }
+    }
+  }
+  
+  .only-desktop-block {
+    display: none !important;
+  }
+
+  .only-desktop {
+    display: none !important;
+  }
+
+
   .navbar-brand {
     content: url("../img/logo-color.png") !important;
     width: 70px;
@@ -231,6 +234,33 @@
       }
       img {
         width: 50px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 480px) {
+  /*vertical cards*/
+  main{
+    .grillaCards{
+      .card{
+        flex-direction: row;
+        .card-body{
+          flex: 0.1 0.25 80%;
+          h3{
+            font-size: 15px;
+            text-align: left;
+          }
+        }
+        .favorite:link,.favorite:visited {
+          right: 5px;
+          top: 5px;
+        }
+        p.precio{
+          font-size: 15px!important;
+        }
+        .addCart {
+          padding: 5px 15px!important;
+        }
       }
     }
   }

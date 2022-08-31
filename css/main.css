@@ -88,7 +88,10 @@ body {
   display: block;
 }
 
-main ul li, main ol li, footer ul li, footer ol li {
+main ul li,
+main ol li,
+footer ul li,
+footer ol li {
   padding-bottom: 12px;
 }
 
@@ -106,7 +109,9 @@ main ul li, main ol li, footer ul li, footer ol li {
   display: none;
 }
 
-.contenedor-redondo, .contenedor-carrito, .contenedor-legales {
+.contenedor-redondo,
+.contenedor-carrito,
+.contenedor-legales {
   border-radius: 15px;
   padding-top: 25px;
   padding-bottom: 25px;
@@ -194,23 +199,35 @@ main ul li, main ol li, footer ul li, footer ol li {
   color: #4a4e4e;
 }
 
-.btn-check:active + .btn, .btn-check:checked + .btn, .btn.active, .btn.show, .btn:active {
+.btn-check:active + .btn,
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:active {
   background-color: #ed2f55;
   border: 1px solid #ed2f55;
+  color: #ffffff;
 }
 
-.btn:hover, .btn-primary:hover, .btn-outline-primar:hover {
+.btn:hover,
+.btn-primary:hover,
+.btn-outline-primar:hover {
   background-color: #02c9a8;
   border: 1px solid #02c9a8;
 }
 
-.btn-check:focus + .btn, .btn:focus {
+.btn-check:focus + .btn,
+.btn:focus {
   background-color: #02c9a8;
   border: 1px solid #02c9a8;
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2) !important;
 }
 
-.btn-check:active + .btn:focus, .btn-check:checked + .btn:focus, .btn.active:focus, .btn.show:focus, .btn:active:focus {
+.btn-check:active + .btn:focus,
+.btn-check:checked + .btn:focus,
+.btn.active:focus,
+.btn.show:focus,
+.btn:active:focus {
   box-shadow: 0 0 0 0.25rem rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -257,7 +274,10 @@ header .navbar-brand {
 header .dropdown-menu {
   border: 1px solid transparent;
 }
-header .dropdown-item.active, header .dropdown-item:active, header .dropdown-item:focus, header .dropdown-item:hover {
+header .dropdown-item.active,
+header .dropdown-item:active,
+header .dropdown-item:focus,
+header .dropdown-item:hover {
   background-color: #f4eaee !important;
 }
 header .flex-var {
@@ -298,7 +318,9 @@ header .badge.text-bg-secondary {
 }
 
 /****************main******************/
-main .destacados, main .producto, main .contacto {
+main .destacados,
+main .producto,
+main .contacto {
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -323,6 +345,18 @@ main .producto {
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
+}
+main a.nav-link {
+  color: #999999;
+  font-weight: 600;
+}
+main a.nav-link.active {
+  color: #4a4e4e;
+  border-bottom: 3px solid #ed2f55;
+}
+main .nav-link:focus,
+main .nav-link:hover {
+  color: #000;
 }
 main .columna-flex-30 {
   width: 30%;
@@ -401,11 +435,13 @@ main .card {
 main .card h3 {
   text-align: center;
 }
-main .card .card-img, main .card .card-img-top {
+main .card .card-img,
+main .card .card-img-top {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
-main .favorite:link, main .favorite:visited {
+main .favorite:link,
+main .favorite:visited {
   color: #999999;
   font-size: 20px;
   position: absolute;
@@ -416,7 +452,8 @@ main .favorite:link, main .favorite:visited {
   border-radius: 5px;
   transition: background-color 2s ease-out 100ms;
 }
-main main .favorite:hover, main main .favorite:focus {
+main main .favorite:hover,
+main main .favorite:focus {
   background-color: #f4eaee;
 }
 main .data {
@@ -463,7 +500,8 @@ main .addCart:hover {
   background-color: #f9be03;
   color: #ffffff;
 }
-main .grillaProductos img.product, main .producto img.product {
+main .grillaProductos img.product,
+main .producto img.product {
   border-radius: 20px 20px 0px 0px;
 }
 main .tabla-carrito img {
@@ -471,6 +509,26 @@ main .tabla-carrito img {
 }
 main .carrito input[type=number] {
   text-align: center;
+}
+main label.btn {
+  padding: 3rem 3rem;
+}
+main .btn-pago {
+  background: #ffffff;
+  color: #4a4e4e;
+  font-weight: 700;
+  padding: 2rem 4rem;
+  border-radius: 1rem;
+}
+main .btn-pago span {
+  font-size: 200%;
+}
+main .btn-pago:hover, main .btn-pago:focus {
+  background-image: linear-gradient(30deg, rgb(245, 51, 62), rgb(251, 28, 117)) !important;
+  color: #ffffff;
+}
+main .ok {
+  color: #02c9a8;
 }
 main .cajamap {
   width: 100%;
@@ -489,14 +547,17 @@ footer {
   padding: 30px 0px;
   font-size: 13px;
 }
-footer a:link, footer a:visited {
+footer a:link,
+footer a:visited {
   color: #ffffff;
 }
-footer a:hover, footer a:focus {
+footer a:hover,
+footer a:focus {
   color: #ffffff;
   text-decoration: underline;
 }
-footer ol, footer ul {
+footer ol,
+footer ul {
   margin-left: -20px;
 }
 footer i {
@@ -749,27 +810,11 @@ main .tabla-carrito span.badge.text-bg-secondary {
 /*RESPONSIVE*/
 /*ipad y mobile*/
 @media only screen and (max-width: 1023px) {
-  header .flex-var {
-    justify-content: center;
-  }
-  header .dropdown-menu {
-    background: transparent;
-  }
-  header nav ul li {
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
-  }
-  .only-desktop-block {
-    display: none !important;
-  }
-  .only-desktop {
-    display: none !important;
-  }
-  .only-mobile-flex {
-    display: flex !important;
-  }
   .navbar-brand img {
     width: 70px;
+  }
+  .only-mobile-flex {
+    display: flex;
   }
   main .gridProductos {
     display: grid;
@@ -807,7 +852,23 @@ main .tabla-carrito span.badge.text-bg-secondary {
   }
 }
 /*mobile categorías*/
-@media only screen and (max-width: 998px) {
+@media only screen and (max-width: 992px) {
+  header .flex-var {
+    justify-content: center;
+  }
+  header .dropdown-menu {
+    background: transparent;
+  }
+  header nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  .only-desktop-block {
+    display: none !important;
+  }
+  .only-desktop {
+    display: none !important;
+  }
   .navbar-brand {
     content: url("../img/logo-color.png") !important;
     width: 70px;
@@ -954,6 +1015,29 @@ main .tabla-carrito span.badge.text-bg-secondary {
   }
   main .tabla-carrito img {
     width: 50px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /*vertical cards*/
+  main .grillaCards .card {
+    flex-direction: row;
+  }
+  main .grillaCards .card .card-body {
+    flex: 0.1 0.25 80%;
+  }
+  main .grillaCards .card .card-body h3 {
+    font-size: 15px;
+    text-align: left;
+  }
+  main .grillaCards .card .favorite:link, main .grillaCards .card .favorite:visited {
+    right: 5px;
+    top: 5px;
+  }
+  main .grillaCards .card p.precio {
+    font-size: 15px !important;
+  }
+  main .grillaCards .card .addCart {
+    padding: 5px 15px !important;
   }
 }
 

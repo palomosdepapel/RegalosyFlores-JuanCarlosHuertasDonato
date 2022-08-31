@@ -97,7 +97,7 @@
                       class="badge text-bg-secondary">x</span> Un momento muy especial</a></li>
                 <li class="align-center">Subtotal: $809,970</li>
                 <li><a class="dropdown-item btn btn-outline-primary" href="carrito.html">Ver carrito</a></li>
-                <li><a class="dropdown-item btn btn-primary" href="#">Finalizar compra</a></li>
+                <li><a class="dropdown-item btn btn-primary" href="checkout-01.html">Finalizar compra</a></li>
               </ul>
             </li>
           </ul>
@@ -112,28 +112,37 @@
       <div class="container-xxl">
         <div class="row align-items-center">
           <div class="col-md-12 p-3">
-            <picture>
-              <source media="(max-width: 799px)" srcset="../img/contacto-480w.jpg">
-              <source media="(min-width: 800px)" srcset="../img/contacto-1288w.jpg">
-              <img src="../img/contacto-1288w.jpg" alt="Contáctenos" width="100%">
-            </picture>
-          </div>
-          <div class="col-md-12 p-3 text-center">
             <h1>Contáctanos</h1>
-            <p>Para nosotros cada cliente es muy importante, por eso queremos
-              evaluar la calidad de nuestros productos, servicios y atención
-              brindada.</p>
-            <a href="mailto://pedidos@dulcemotivo.net" class="btn btn-primary">Clic aquí para contactarnos</a>
           </div>
-        </div>
-        <div>
-          <div class="row align-items-center pt-5">
-            <iframe class="cajamap" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15904.106382720063!2d-74.0451486!3d4.7653581!3m2!1i1024!2i768!4f13.
-                1!5e0!3m2!1ses!2sco!4v1657239696533!5m2!1ses!2sco" width="100%" height="300" style="border: 0"
-              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+          <div class="contenedor-legales">
+            <div class="col-md-12 p-3">
+              <picture>
+                <source media="(max-width: 799px)" srcset="../img/contacto-480w.jpg">
+                <source media="(min-width: 800px)" srcset="../img/contacto-1288w.jpg">
+                <img src="../img/contacto-1288w.jpg" alt="Contáctenos" width="100%">
+              </picture>
+            </div>
+            <div class="col-md-12 p-3 text-center">
+              <p>Para nosotros cada cliente es muy importante, por eso queremos
+                evaluar la calidad de nuestros productos, servicios y atención
+                brindada.</p>
+              <a href="mailto://pedidos@dulcemotivo.net" class="btn btn-primary">Clic aquí para contactarnos</a>
+            </div>
           </div>
+
+
         </div>
       </div>
+
+      <div class="container-fluid">
+        <div class="row align-items-center pt-5">
+          <iframe class="cajamap" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15904.106382720063!2d-74.0451486!3d4.7653581!3m2!1i1024!2i768!4f13.
+                1!5e0!3m2!1ses!2sco!4v1657239696533!5m2!1ses!2sco" width="100%" height="300" style="border: 0"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
     </section>
 
   </main>
@@ -182,10 +191,10 @@
     jQuery(document).ready(function ($) {
       var alterClass = function () {
         var ww = document.body.clientWidth;
-        if (ww < 981) {
+        if (ww < 992) {
           $("nav").removeClass("navbar-dark bg-dark");
           $("nav").addClass("navbar-light bg-light");
-        } else if (ww >= 982) {
+        } else if (ww >= 993) {
           $("nav").removeClass("navbar-light bg-light");
           $("nav").addClass("navbar-dark bg-dark");
         }

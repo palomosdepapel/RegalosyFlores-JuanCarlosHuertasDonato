@@ -99,7 +99,7 @@
                       class="badge text-bg-secondary">x</span> Un momento muy especial</a></li>
                 <li class="align-center">Subtotal: $809,970</li>
                 <li><a class="dropdown-item btn btn-outline-primary" href="carrito.html">Ver carrito</a></li>
-                <li><a class="dropdown-item btn btn-primary" href="#">Finalizar compra</a></li>
+                <li><a class="dropdown-item btn btn-primary" href="checkout-01.html">Finalizar compra</a></li>
               </ul>
             </li>
           </ul>
@@ -239,10 +239,10 @@
     jQuery(document).ready(function ($) {
       var alterClass = function () {
         var ww = document.body.clientWidth;
-        if (ww < 981) {
+        if (ww < 992) {
           $("nav").removeClass("navbar-dark bg-dark");
           $("nav").addClass("navbar-light bg-light");
-        } else if (ww >= 982) {
+        } else if (ww >= 993) {
           $("nav").removeClass("navbar-light bg-light");
           $("nav").addClass("navbar-dark bg-dark");
         }

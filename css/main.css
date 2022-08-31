@@ -814,7 +814,7 @@ main .tabla-carrito span.badge.text-bg-secondary {
     width: 70px;
   }
   .only-mobile-flex {
-    display: flex;
+    display: flex !important;
   }
   main .gridProductos {
     display: grid;

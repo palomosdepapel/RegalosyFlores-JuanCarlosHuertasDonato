@@ -1044,6 +1044,9 @@ main .tabla-carrito span.badge.text-bg-secondary {
   main .grillaCards .card .addCart {
     padding: 5px 15px !important;
   }
+  main .nav-link {
+    padding: var(--bs-nav-link-padding-y) 5px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -354,6 +354,11 @@ main a.nav-link.active {
   color: #4a4e4e;
   border-bottom: 3px solid #ed2f55;
 }
+main .nav-pills .nav-link.active, main .nav-pills .show > .nav-link {
+  color: #4a4e4e;
+  background-color: transparent;
+  border-radius: 0px;
+}
 main .nav-link:focus,
 main .nav-link:hover {
   color: #000;

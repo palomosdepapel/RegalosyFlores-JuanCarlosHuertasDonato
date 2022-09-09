@@ -334,6 +334,12 @@ main {
     border-bottom: 3px solid $primary;
   }
 
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    color: $darkgrey;
+    background-color: transparent;
+    border-radius: 0px;
+  }
+
   .nav-link:focus,
   .nav-link:hover {
     color: $black;

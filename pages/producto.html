@@ -128,18 +128,63 @@
           </div>
           <div class="row">
             <div class="col-md-12 p-3">
-              <h3>Producto</h3>
-              <ul>
-                <li>Galletas Zukerino (water crakers)</li>
-                <li>Chocolates Guylian</li>
-                <li>Duraznos o melocotones en almíbar</li>
-                <li>Aceitunas</li>
-                <li>Tomates secos</li>
-                <li>Queso holandés</li>
-                <li>Pâté</li>
-                <li>Pícolo de vino tinto Santa Carolina</li>
-                <li>Pícolo de vino blanco</li>
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link mx-2 active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Producto</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link mx-2" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Descripción</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link mx-2" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Valoraciones</a>
+                </li>
               </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                  tabindex="0">
+                  <ul>
+                    <li>Galletas Zukerino (water crakers)</li>
+                    <li>Chocolates Guylian</li>
+                    <li>Duraznos o melocotones en almíbar</li>
+                    <li>Aceitunas</li>
+                    <li>Tomates secos</li>
+                    <li>Queso holandés</li>
+                    <li>Pâté</li>
+                    <li>Pícolo de vino tinto Santa Carolina</li>
+                    <li>Pícolo de vino blanco</li>
+                  </ul>
+                </div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                  tabindex="0">
+                  <p>Llevamos hasta tu casa o lugar de trabajo todos los detalles con los que deseas expresar tus sentimientos.</p>
+                </div>
+                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                  tabindex="0">
+                  <form>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Tu valoración</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInput1" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="exampleInput1">
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Guarda mi nombre, correo electrónico y web en este navegador para la próxima vez que comente.</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                  </form>
+                </div>
+              </div>
             </div>
           </div>
         </div>
